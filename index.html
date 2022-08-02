@@ -6,8 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mateus Cavalcanti - Links</title>
     <link rel="stylesheet" href="./styles.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded',() =>{
+    VANTA.BIRDS({
+        el: "#vanta",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,  
+        color1: 0x6dc2e6,
+        birdSize: 0.70,
+        wingSpan: 40.00,
+        speedLimit: 2.00,
+        separation: 100.00,
+        alignment: 80.00,
+        backgroundAlpha: 0.0,
+        quantity: 4.0
+    })
+    setTimeout(() => {
+    const main = document.querySelector('main')
+    main.style.opacity = 1
+    main.style.filter='blur(0px)'
+    },600)
+})
+</script>
 </head>
 <body>
+    <div id="vanta"></div>
     <main>
     <header>
         <img src="./imagens/mateus.jpg"/>
@@ -16,16 +46,19 @@
     <ul>
         <li>
             <a href="https://github.com/matscats">
+                <img src="./imagens/github.svg" alt="GitHub" width="20">
             Github
             </a>
         </li>
         <li>
             <a href="https://www.instagram.com/mats.ca/">
+                <img src="./imagens/instagram.svg" alt="Instagram" width="20">
             Instagram
             </a>
         </li>
         <li>
-            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1705340J1&tokenCaptchar=03ANYolqv0t6XDPOP0XaQXfqIak_WVuLMnU__LHpkTi_zuwl_Kd_HZOy6Tc61vu2HnGenQ7fo7UC-1hv6mtfQtFcW77zAoZMSCn8R1-6_NOGFlhwoOkETdkdith6y1v3weu78xQI4Zm9CitTUguqtF6jnLaaoNQGGLhNi96B8Y22mI6po1fNGSEdDPtFNak9qAUOC0jnhBd6RFAD3GWwBhKTAKNWtjbZ7K-oPo6DSYYET95flJM-IYs0Cu7m50TuCT5l6jWaLLykjCDcBpCzucFdRhpNHpx0CXZgL7hnGXAXZW4tX6IFBhw9dZItAU2ToSmWflbjlgDaDKWMxnwyEKVyG9NPudAPIiy2ExyGuIrT4ZWeMvr-4KEsqgMV8q8SzlX-y1q3LgUdVTS-nGb2JdBgBtFc6teO8RBjIZNoBivDKK7UsvM7ALYiq7cW8HeYVztAomnXsxrjO7vxg54qaLFhQE6HO7_HOp_dCfSZcMuU9Z6WQw_CaazRDzyAOgn_YbxdJu_2FpoCH7ZLuI2aXN8fdPCIA53KnFzw">                
+            <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K1705340J1&tokenCaptchar=03ANYolqv0t6XDPOP0XaQXfqIak_WVuLMnU__LHpkTi_zuwl_Kd_HZOy6Tc61vu2HnGenQ7fo7UC-1hv6mtfQtFcW77zAoZMSCn8R1-6_NOGFlhwoOkETdkdith6y1v3weu78xQI4Zm9CitTUguqtF6jnLaaoNQGGLhNi96B8Y22mI6po1fNGSEdDPtFNak9qAUOC0jnhBd6RFAD3GWwBhKTAKNWtjbZ7K-oPo6DSYYET95flJM-IYs0Cu7m50TuCT5l6jWaLLykjCDcBpCzucFdRhpNHpx0CXZgL7hnGXAXZW4tX6IFBhw9dZItAU2ToSmWflbjlgDaDKWMxnwyEKVyG9NPudAPIiy2ExyGuIrT4ZWeMvr-4KEsqgMV8q8SzlX-y1q3LgUdVTS-nGb2JdBgBtFc6teO8RBjIZNoBivDKK7UsvM7ALYiq7cW8HeYVztAomnXsxrjO7vxg54qaLFhQE6HO7_HOp_dCfSZcMuU9Z6WQw_CaazRDzyAOgn_YbxdJu_2FpoCH7ZLuI2aXN8fdPCIA53KnFzw">
+                <img src="./imagens/lattes.svg" alt="Lattes" width="20">                
             Lattes
             </a>
         </li>
